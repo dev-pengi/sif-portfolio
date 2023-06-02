@@ -3,6 +3,9 @@ export default {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        "quote-card": "repeat(auto-fit, minmax(300px, 1fr))",
+      },
       screens: {
         vsm: "370px",
       },
