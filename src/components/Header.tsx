@@ -7,6 +7,7 @@ import Image from "next/image";
 
 const Header: FC = () => {
   const [isOpened, setIsOpened] = useState(false);
+  const burgers = [1, 2, 3];
 
   return (
     <header
@@ -37,21 +38,15 @@ const Header: FC = () => {
         id="mobile-burger"
         onClick={() => setIsOpened(!isOpened)}
       >
-        <span
-          className={`w-[28px] h-[3px] bg-text-color block rounded-lg my-[4px] duration-300 ${
-            isOpened ? "bg-primary" : ""
-          }`}
-        ></span>
-        <span
-          className={`w-[28px] h-[3px] bg-text-color block rounded-lg my-[4px] duration-300 ${
-            isOpened ? "bg-primary" : ""
-          }`}
-        ></span>
-        <span
-          className={`w-[28px] h-[3px] bg-text-color block rounded-lg my-[4px] duration-300 ${
-            isOpened ? "bg-primary" : ""
-          }`}
-        ></span>
+        {burgers.map((burger, index: number) => (
+          <span
+            key={index}
+            onClick={() => setIsOpened(false)}
+            className={`w-[28px] h-[3px] bg-text-color block rounded-lg my-[4px] duration-300 ${
+              isOpened ? "bg-primary" : ""
+            }`}
+          ></span>
+        ))}
       </div>
     </header>
   );
