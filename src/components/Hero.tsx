@@ -56,17 +56,17 @@ const Hero: FC = () => {
           <div className="flex flex-col">
             <h1
               ref={contentRef}
-              className="lg:text-start text-center sm:text-[40px] text-[28px] font-bold"
+              className="lg:text-start text-center sm:text-[40px] vsm:text-[28px] text-[22px] font-bold"
               dangerouslySetInnerHTML={{ __html: hero.content }}
             ></h1>
             <p
               ref={subContentRef}
-              className="lg:text-start text-center sm:text-[20px] text-[18px] font-normal capitalize"
+              className="lg:text-start text-center sm:text-[20px] vsm:text-[18px] text-[15px] font-normal capitalize"
             >
               {hero.subContent}
             </p>
           </div>
-          <div className="mt-5 flex items-center lg:justify-start justify-center gap-8 animate__fadeIn">
+          <div className="mt-5 flex vsm:flex-row flex-col vsm:gap-8 gap-4 items-center lg:justify-start justify-center  animate__fadeIn">
             <a className={`${buttonStyle} capitalize`}>download resume</a>
             <div className="flex items-center gap-7">
               <a

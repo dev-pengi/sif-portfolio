@@ -94,5 +94,6 @@ main {
 }
 
 .hero-ill-min-width {
-  width: min(500px, 100%);
+  width: 100%;
+  max-width: 500px;
 }
