@@ -30,10 +30,10 @@ const Header: FC = () => {
     <header
       className={`bg-dark-2 top-0 h-14 w-full flex items-center justify-between fixed z-10 ${contentPadding}`}
     >
-      <div className="flex items-center justify-center gap-2">
+      <a href="#" className="flex items-center justify-center gap-2">
         <Image src={logo} className="w-[36px]" alt="sifedine | pengi dev" />
         <h2 className="text-xl">Sifedine</h2>
-      </div>
+      </a>
       <div ref={wrapperRef}>
         <ul
           className={`md:w-max w-full md:bg-transparent bg-dark-3 flex md:flex-row flex-col md:relative md:top-0 md:gap-8 gap-4 fixed duration-200 ${
