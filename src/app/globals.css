@@ -92,4 +92,7 @@ main {
 #mobile-burger:hover span {
   background-color: var(--primary);
 }
- 
+
+.hero-ill-min-width {
+  width: min(500px, 100%);
+}

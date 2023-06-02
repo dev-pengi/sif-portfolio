@@ -47,26 +47,26 @@ const Hero: FC = () => {
     };
   }, []);
   return (
-    <section className="w-full mt-[120px]" id="home">
+    <section className="w-full lg:mt-[120px]" id="home">
       <div
         id="hero"
-        className={`${contentPadding} max-w-[1300px] mx-auto flex items-center justify-between`}
+        className={`${contentPadding} max-w-[1300px] mx-auto flex items-center justify-between lg:flex-row flex-col-reverse`}
       >
         <div className="flex flex-col">
           <div className="flex flex-col">
             <h1
               ref={contentRef}
-              className="text-[40px] font-bold"
+              className="lg:text-start text-center sm:text-[40px] text-[28px] font-bold"
               dangerouslySetInnerHTML={{ __html: hero.content }}
             ></h1>
             <p
               ref={subContentRef}
-              className="text-[20px] font-normal capitalize"
+              className="lg:text-start text-center sm:text-[20px] text-[18px] font-normal capitalize"
             >
               {hero.subContent}
             </p>
           </div>
-          <div className="mt-5 flex items-center gap-8 animate__fadeIn">
+          <div className="mt-5 flex items-center lg:justify-start justify-center gap-8 animate__fadeIn">
             <a className={`${buttonStyle} capitalize`}>download resume</a>
             <div className="flex items-center gap-7">
               <a
@@ -95,7 +95,7 @@ const Hero: FC = () => {
         </div>
         <Player
           src={hero.illustration}
-          className="player w-[500px]"
+          className="player hero-ill-min-width"
           loop
           autoplay
         />
