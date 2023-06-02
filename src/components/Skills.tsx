@@ -8,12 +8,11 @@ const Skills: FC = () => {
   return (
     <section className="py-12" id="skills">
       <h3 className="capitalize font-black text-center text-3xl">My Skills</h3>
+      <p className="mt-3 max-w-[400px] text-center text-text-color-light mx-auto">
+        as a full-stack developer, here is my skillset of some of the languages
+        and technologies i use the most
+      </p>
       <div className={`${contentPadding} max-w-[1600px] mx-auto`}>
-        <p className="text-center max-w-[450px] mx-auto mt-2 text-text-color-light">
-          as a full-stack developer, here is my skillset of some of the
-          languages and technologies i use the most
-        </p>
-
         <div className="mt-[50px] grid md:grid-cols-2 grid-cols-1 gap-10 gap-y-9">
           {skills.map((skill, index: number) => (
             <div key={index}>
