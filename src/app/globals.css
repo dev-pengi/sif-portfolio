@@ -92,8 +92,3 @@ main {
 #mobile-burger:hover span {
   background-color: var(--primary);
 }
-
-.hero-ill-min-width {
-  width: 100%;
-  max-width: 500px;
-}
