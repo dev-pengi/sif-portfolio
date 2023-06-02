@@ -23,6 +23,10 @@ const hero: Ihero = {
 
 const headerItems: IheaderItem[] = [
   {
+    name: "home",
+    link: "#",
+  },
+  {
     name: "about",
     link: "#about",
   },

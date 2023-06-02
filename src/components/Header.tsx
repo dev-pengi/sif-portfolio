@@ -4,7 +4,6 @@ import { contentPadding } from "@/styles";
 import { headerItems } from "@/constants";
 import logo from "../../public/logo.png";
 import Image from "next/image";
-import clickOutside from "react-click-outside";
 
 const Header: FC = () => {
   const [isOpened, setIsOpened] = useState(false);
@@ -37,9 +36,9 @@ const Header: FC = () => {
       </div>
       <div ref={wrapperRef}>
         <ul
-          className={`sm:w-max w-full sm:bg-transparent bg-dark-3 flex sm:flex-row flex-col sm:relative sm:top-0 sm:gap-8 gap-4 fixed duration-200 ${
-            isOpened ? "bottom-[-0.5px]" : "-bottom-52"
-          } left-0 sm:rounded-none rounded-tl-lg rounded-tr-lg items-center py-3`}
+          className={`md:w-max w-full md:bg-transparent bg-dark-3 flex md:flex-row flex-col md:relative md:top-0 md:gap-8 gap-4 fixed duration-200 ${
+            isOpened ? "bottom-[-0.5px]" : "-bottom-64"
+          } left-0 md:rounded-none rounded-tl-lg rounded-tr-lg items-center py-3`}
         >
           {headerItems.map((item, index) => (
             <li key={index} onClick={() => setIsOpened(false)}>
@@ -53,7 +52,7 @@ const Header: FC = () => {
           ))}
         </ul>
         <div
-          className="sm:hidden block cursor-pointer"
+          className="md:hidden block cursor-pointer"
           id="mobile-burger"
           onClick={() => setIsOpened(!isOpened)}
         >

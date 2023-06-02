@@ -35,7 +35,7 @@ const About: FC = () => {
         className={`${contentPadding} grid grid-cols-quote-card gap-9 mt-[60px] max-w-[1600px] mx-auto`}
       >
         {quotes.map((quote, index: number) => (
-          <div key={index} className="bg-dark-3 px-[12px] py-[14px] rounded-md duration-300 hover:-translate-y-1">
+          <div key={index} className="bg-dark-3 px-[16px] py-[14px] rounded-md duration-300 hover:-translate-y-1">
             <p>“{quote}”</p>
             <h5 className="mt-3 flex justify-end italic font-light text-[15px]">
               - sifedine
