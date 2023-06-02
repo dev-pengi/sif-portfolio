@@ -17,9 +17,9 @@ const Header: FC = () => {
         <h2 className="text-xl">Sifedine</h2>
       </div>
       <ul
-        className={`sm:w-max w-full sm:bg-transparent bg-dark-3 flex sm:flex-row flex-col sm:relative sm:top-0 fixed duration-200 ${
+        className={`sm:w-max w-full sm:bg-transparent bg-dark-3 flex sm:flex-row flex-col sm:relative sm:top-0 sm:gap-8 gap-4 fixed duration-200 ${
           isOpened ? "bottom-0" : "-bottom-52"
-        } left-0 sm:rounded-none rounded-tl-lg rounded-tr-lg items-center gap-4 py-3`}
+        } left-0 sm:rounded-none rounded-tl-lg rounded-tr-lg items-center py-3`}
       >
         {headerItems.map((item, index) => (
           <li key={index}>
