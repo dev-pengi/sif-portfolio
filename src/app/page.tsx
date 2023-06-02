@@ -1,4 +1,4 @@
-import { Hero, Header, About } from "@/components";
+import { Hero, Header, About, Skills } from "@/components";
 import "animate.css";
 
 export default function Home() {
@@ -8,6 +8,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <Skills />
       </main>
     </>
   );
