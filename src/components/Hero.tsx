@@ -95,7 +95,7 @@ const Hero: FC = () => {
         </div>
         <Player
           src={hero.illustration}
-          className="player hero-ill-min-width"
+          className="player max-w-[500px] w-full"
           loop
           autoplay
         />
