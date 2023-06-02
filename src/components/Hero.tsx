@@ -47,7 +47,7 @@ const Hero: FC = () => {
     };
   }, []);
   return (
-    <section className="w-full mt-[120px]">
+    <section className="w-full mt-[120px]" id="home">
       <div
         id="hero"
         className={`${contentPadding} max-w-[1300px] mx-auto flex items-center justify-between`}
