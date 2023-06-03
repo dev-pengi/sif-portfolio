@@ -25,6 +25,11 @@ interface ISideProjects {
   link: string;
   github: string;
 }
+interface IService {
+  name: string;
+  description: string;
+  features: string[];
+}
 
 const name: string = "Sifedine";
 
@@ -166,6 +171,45 @@ const SideProjects: ISideProjects[] = [
   },
 ];
 
+const services: IService[] = [
+  // this has to be 3 plans no more no less :)
+  {
+    name: "front end",
+    description:
+      "build you a website from scratch with all of the modern web requirements",
+    features: [
+      "Uses the latest web technologies",
+      "Fast and optimized web pages",
+      "Full responsive web design",
+      "Modern and clean design",
+      "SEO friendly",
+    ],
+  },
+  {
+    name: "back end",
+    description: "create robust server-side solutions for web applications",
+    features: [
+      "Develop RESTful APIs",
+      "Handle server-side logic",
+      "Integrate with databases",
+      "Optimize server performance",
+      "Implement 3rd party integrations",
+    ],
+  },
+  {
+    name: "custom project",
+    description:
+      "build you whatever project that matches your needs and requirements",
+    features: [
+      "full stack applications",
+      "tools and automation",
+      "server managment",
+      "telegram bots",
+      "discord bots",
+    ],
+  },
+];
+
 const aboutDescription: string =
   "i'm a young developer from algeria, i use javascript and typescript i code both client side (react, nextjs) and backend (nodejs express and mongodb) and even server hosting and management. i've shown a good level of dedication and perseverance in pursuing my passion for software development. with a natural ability to solve problems and an eagerness to learn, i'm committed to keeping up to date with the latest technology. my diverse skills in web development, server management, and publishing make me an invaluable asset to any team.";
 
@@ -181,7 +225,8 @@ export {
   aboutDescription,
   hero,
   quotes,
+  skills,
   projects,
   SideProjects,
-  skills,
+  services,
 };
