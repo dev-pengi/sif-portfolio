@@ -46,7 +46,7 @@ const About: FC = () => {
         className={`${contentPadding} grid grid-cols-quote-card gap-9 mt-[60px] max-w-[1600px] mx-auto`}
       >
         {quotes.map((quote, index: number) => (
-          <Tilt options={defaultTiltOptions}>
+          <Tilt key={index} options={defaultTiltOptions}>
             <div
               key={index}
               className="bg-dark-3 px-[16px] py-[14px] rounded-md duration-300"
