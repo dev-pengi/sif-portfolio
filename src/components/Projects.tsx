@@ -119,34 +119,34 @@ const Projects: FC = () => {
       <div className="mt-[30px]">
         <Carousel
           emulateTouch
-
           className=" pb-[40px]"
           autoPlay
           {...carouselSettings}
         >
           {SideProjects.map((project, index: number) => (
-            <Tilt key={index} options={defaultTiltOptions}>
-              <div className="bg-dark-3 flex flex-col h-80 px-12 py-6 mx-4 rounded-lg mb-20">
-                <div className="flex flex-col flex-grow items-start justify-start gap-4">
-                  <h2 className="text-2xl font-extrabold text-start">
-                    {project.name}
-                  </h2>
-                  <p className="text-start">{project.description}</p>
-                </div>
-                <div className="mt-auto flex items-center gap-4">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    className={`${buttonStyle}`}
-                  >
-                    Website Link
-                  </a>
-                  <a href={project.github} className={`${iconButtonStyle}`}>
-                    <FontAwesomeIcon icon={faGithub} />
-                  </a>
-                </div>
+            <div
+              key={index}
+              className="bg-dark-3 flex flex-col h-80 px-12 py-6 mx-4 rounded-lg mb-20"
+            >
+              <div className="flex flex-col flex-grow items-start justify-start gap-4">
+                <h2 className="text-2xl font-extrabold text-start">
+                  {project.name}
+                </h2>
+                <p className="text-start">{project.description}</p>
               </div>
-            </Tilt>
+              <div className="mt-auto flex items-center gap-4">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  className={`${buttonStyle}`}
+                >
+                  Website Link
+                </a>
+                <a href={project.github} className={`${iconButtonStyle}`}>
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </div>
+            </div>
           ))}
         </Carousel>
       </div>
