@@ -1,8 +1,6 @@
 "use client";
 import { buttonStyle, contentPadding } from "@/styles";
 import { FC } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWindowRestore } from "@fortawesome/free-solid-svg-icons";
 import { services } from "@/constants";
 
 const Services: FC = () => {

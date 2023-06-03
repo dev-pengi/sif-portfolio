@@ -1,9 +1,21 @@
-import { Hero, Header, About, Skills, Projects, Services } from "@/components";
+import {
+  Hero,
+  Header,
+  About,
+  Skills,
+  Projects,
+  Services,
+  Contact,
+} from "@/components";
 import "animate.css";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   return (
     <>
+      <div>
+        <Toaster />
+      </div>
       <Header />
       <main>
         <Hero />
@@ -11,6 +23,7 @@ export default function Home() {
         <Skills />
         <Projects />
         <Services />
+        <Contact />
       </main>
     </>
   );

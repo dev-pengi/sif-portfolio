@@ -15,7 +15,6 @@ const Header: FC = () => {
     function handleClickOutside(event: any) {
       if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
         setIsOpened(false);
-        console.log("Clicked outside");
       }
     }
 

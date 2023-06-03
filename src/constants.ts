@@ -219,8 +219,15 @@ const quotes: string[] = [
   "if you're not facing problems at what you're doing, you are not evolving you are repeating",
 ];
 
+const emailjsInfo = {
+  templateID: "template_wwub89o",
+  serviceID: "service_l6tm9wd",
+  publicID: "SuylNGyCgOCrwrP4M",
+};
+
 export {
   name,
+  emailjsInfo,
   headerItems,
   aboutDescription,
   hero,
