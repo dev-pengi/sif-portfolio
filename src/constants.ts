@@ -123,7 +123,7 @@ const projects: IProjects[] = [
     description:
       "utils-core.js is a powerful JavaScript utility library that provides a wide range of functions to simplify common programming tasks",
     link: "https://utils-core.js.org",
-    github: "https://github.com/dev-pengi/core-utils.js",
+    github: "https://github.com/dev-pengi/utils-core.js",
     preview: coreUtilsPreviw,
   },
   {
