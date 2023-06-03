@@ -8,7 +8,7 @@ const Skills: FC = () => {
   return (
     <section className="py-12" id="skills">
       <h3 className="capitalize font-black text-center text-3xl">My Skills</h3>
-      <p className="mt-3 max-w-[400px] text-center text-text-color-light mx-auto">
+      <p className="mt-3 w-[98%] max-w-[400px] text-center text-text-color-light mx-auto">
         as a full-stack developer, here is my skillset of some of the languages
         and technologies i use the most
       </p>

@@ -62,7 +62,7 @@ const Projects: FC = () => {
       <h3 className="capitalize font-black text-center text-3xl">
         My Projects
       </h3>
-      <p className="mt-3 max-w-[400px] text-center text-text-color-light mx-auto">
+      <p className="mt-3 w-[98%] max-w-[400px] text-center text-text-color-light mx-auto">
         these are some of the projects i've made, most of them are just for
         practice
       </p>
@@ -122,7 +122,7 @@ const Projects: FC = () => {
       <div className="mt-[30px]">
         <Carousel
           infiniteLoop
-          interval={800}
+          interval={1500}
           stopOnHover
           autoPlay
           {...carouselSettings}
