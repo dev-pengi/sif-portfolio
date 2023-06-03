@@ -8,6 +8,7 @@ export default {
       },
       screens: {
         vsm: "370px",
+        xlg: "1300px",
       },
       colors: {
         primary: "#5294e2",
