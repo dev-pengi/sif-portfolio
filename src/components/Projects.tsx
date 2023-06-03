@@ -26,7 +26,6 @@ const Projects: FC = () => {
     swipeable: true,
     showStatus: false,
     showThumbs: false,
-    infiniteLoop: true,
     centerMode: true,
     centerSlidePercentage: 33.33,
     selectedItem: 0,
@@ -93,7 +92,11 @@ const Projects: FC = () => {
                   Website Link
                 </a>
                 {project.github && (
-                  <a href={project.github} className={`${iconButtonStyle}`}>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    className={`${iconButtonStyle}`}
+                  >
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                 )}
@@ -118,8 +121,9 @@ const Projects: FC = () => {
 
       <div className="mt-[30px]">
         <Carousel
-          emulateTouch
-          className=" pb-[40px]"
+          infiniteLoop
+          interval={800}
+          stopOnHover
           autoPlay
           {...carouselSettings}
         >
@@ -142,7 +146,11 @@ const Projects: FC = () => {
                 >
                   Website Link
                 </a>
-                <a href={project.github} className={`${iconButtonStyle}`}>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  className={`${iconButtonStyle}`}
+                >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </div>
