@@ -140,16 +140,16 @@ const SideProjects = [
   {
     name: "music-bot",
     description:
-      "an open sourced discord music bot, built with nodejs and typescript, it uses discord.js and discord-player",
+      "an open sourced discord music bot, built with nodejs and typescript, it uses discord.js for interacting with the discord API and discord-player framework for the music futures",
     link: "https://www.npmjs.com/package/snowflake-uid",
     github: "https://github.com/dev-pengi/music-bot",
   },
   {
     name: "mark-parse",
     description:
-      "Mark parse is a JavaScript module that allows you to parse Markdown text and convert it into HTML.",
-    link: "",
-    github: "",
+      "Mark parse is a JavaScript module that allows you to parse Markdown text and convert it into a plain HTML.",
+    link: "https://www.npmjs.com/package/mark-parse",
+    github: "https://github.com/dev-pengi/mark-parse",
   },
   {
     name: "dominated-color",
