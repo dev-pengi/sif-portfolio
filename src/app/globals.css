@@ -92,3 +92,7 @@ main {
 #mobile-burger:hover span {
   background-color: var(--primary);
 }
+
+.services-list li {
+  list-style: inside;
+}
