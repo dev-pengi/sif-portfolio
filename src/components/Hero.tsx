@@ -85,7 +85,7 @@ const Hero: FC = () => {
               </a>
               <a
                 target="_blank"
-                href="https://instagram.com/sif.js"
+                href="https://instagram.com/_sif.js"
                 className={`${heroIcons}`}
               >
                 <FontAwesomeIcon icon={faInstagram} />
