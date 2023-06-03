@@ -79,7 +79,7 @@ const Projects: FC = () => {
                 <h2 className="text-2xl font-bold capitalize">
                   {project.name}
                 </h2>
-                <p className="mt-4 leading-7 lg:max-w-[70%] w-full">
+                <p className="mt-4 leading-7 lg:max-w-[70%] w-full text-text-color-light">
                   {project.description}
                 </p>
               </div>
@@ -136,7 +136,9 @@ const Projects: FC = () => {
                 <h2 className="text-2xl font-extrabold text-start">
                   {project.name}
                 </h2>
-                <p className="text-start">{project.description}</p>
+                <p className="text-start text-text-color-light">
+                  {project.description}
+                </p>
               </div>
               <div className="mt-auto flex items-center gap-4">
                 <a

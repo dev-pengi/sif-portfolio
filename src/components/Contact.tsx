@@ -21,6 +21,11 @@ const Contact: FC = () => {
   const handleSubmit = async () => {
     setLoading(true);
     try {
+      if (loading) return;
+      if (!name || !email || !message) {
+        toast.error("Please fill all the fields", { style: toastStyle });
+        return setLoading(false);
+      }
       await emailjs.send(
         emailjsInfo.serviceID,
         emailjsInfo.templateID,
@@ -45,10 +50,10 @@ const Contact: FC = () => {
     <section className="bg-dark-2 py-12" id="contacts">
       <div className={`${contentPadding}`}>
         <div
-          className={`max-w-[1400px] mx-auto py-12 px-6 flex items-start lg:flex-row flex-col justify-center gap-9 bg-dark-1 shadow-lg rounded-md`}
+          className={`max-w-[1400px] mx-auto py-12 px-6 flex items-start lg:flex-row flex-col justify-center gap-9 bg-dark-3 shadow-lg rounded-md`}
         >
           <div className="lg:px-0 lg:w-max w-full px-2">
-            <h2 className="text-3xl font-black mx-auto lg:text-start text-center w-max">
+            <h2 className="text-4xl font-black lg:mx-0 mx-auto w-max">
               Contact
             </h2>
             <p className="max-w-[500px] mt-[16px] lg:text-start text-center mx-auto">
@@ -59,7 +64,7 @@ const Contact: FC = () => {
           <div className="lg:w-[75%] lg:max-w-[700px] w-full flex flex-col gap-4">
             <div className="flex items-center justify-center sm:flex-row flex-col gap-3">
               <input
-                className="bg-dark-3 w-full px-4 py-3 rounded-[5px]"
+                className="bg-dark-2 w-full px-4 py-3 rounded-[5px]"
                 placeholder="Name"
                 value={name}
                 onChange={(e) => {
@@ -68,7 +73,7 @@ const Contact: FC = () => {
                 type="text"
               />
               <input
-                className="bg-dark-3 w-full px-4 py-3 rounded-[5px]"
+                className="bg-dark-2 w-full px-4 py-3 rounded-[5px]"
                 placeholder="Email"
                 value={email}
                 onChange={(e) => {
@@ -83,7 +88,7 @@ const Contact: FC = () => {
                 setMessage(e.target.value);
               }}
               placeholder="Message.."
-              className="min-h-[350px]  w-full px-4 py-3 rounded-[5px] resize-y bg-dark-3"
+              className="min-h-[350px]  w-full px-4 py-3 rounded-[5px] resize-y bg-dark-2"
             ></textarea>
             <button
               className={`${buttonStyle} ${

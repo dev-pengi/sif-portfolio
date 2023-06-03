@@ -10,7 +10,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sifedine | pengi dev",
-  description: "a self taught full stack developer",
+  description:
+    "an algerian self taught full stack developer, check my portfolio for more info",
   keywords: ["developer", "coder", "programmer", "portfolio", "full-stack"],
   themeColor: "dark",
 };
