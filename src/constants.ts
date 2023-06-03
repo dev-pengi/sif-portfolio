@@ -19,6 +19,12 @@ interface IProjects {
   github?: string;
   preview: StaticImageData;
 }
+interface ISideProjects {
+  name: string;
+  description: string;
+  link: string;
+  github: string;
+}
 
 const name: string = "Sifedine";
 
@@ -129,7 +135,7 @@ const projects: IProjects[] = [
   },
 ];
 
-const SideProjects = [
+const SideProjects: ISideProjects[] = [
   {
     name: "snowflake-uid",
     description:
@@ -141,7 +147,7 @@ const SideProjects = [
     name: "music-bot",
     description:
       "an open sourced discord music bot, built with nodejs and typescript, it uses discord.js for interacting with the discord API and discord-player framework for the music futures",
-    link: "https://www.npmjs.com/package/snowflake-uid",
+    link: "https://github.com/dev-pengi/music-bot",
     github: "https://github.com/dev-pengi/music-bot",
   },
   {
