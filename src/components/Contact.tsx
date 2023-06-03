@@ -47,7 +47,7 @@ const Contact: FC = () => {
     setLoading(false);
   };
   return (
-    <section className="bg-dark-2 py-12" id="contacts">
+    <section className="bg-dark-2 py-12" id="contact">
       <div className={`${contentPadding}`}>
         <div
           className={`max-w-[1400px] mx-auto py-12 px-6 flex items-start lg:flex-row flex-col justify-center gap-9 bg-dark-3 shadow-lg rounded-md`}
