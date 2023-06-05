@@ -17,7 +17,7 @@ const Footer: FC = () => {
             Nexjs
           </a>{" "}
           by{" "}
-          <a href="https://github.com/pengi-dev" className="text-primary">
+          <a href="https://github.com/dev-pengi" className="text-primary">
             Sifedine
           </a>
         </p>
