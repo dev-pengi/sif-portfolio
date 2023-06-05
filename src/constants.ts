@@ -93,6 +93,7 @@ const skills: ISkills[] = [
 ];
 
 import CoMedPreview from "../public/projects/co_med.png";
+import blobPreview from "../public/projects/blob.png";
 import ChattiPreviw from "../public/projects/chatti.png";
 import coreUtilsPreviw from "../public/projects/core-utils-docs.png";
 import rhynoPreviw from "../public/projects/rhyno.png";
@@ -100,6 +101,14 @@ import aitalkPreviw from "../public/projects/aitalk.png";
 import { StaticImageData } from "next/image";
 
 const projects: IProjects[] = [
+  {
+    name: "svg blob generator",
+    description:
+      "a quick useful svg blob shapes generator, cutomize the shape, the color and the size and download it as svg or png",
+    link: "https://blob.sifedine.com",
+    github: "https://github.com/dev-pengi/svgblob",
+    preview: blobPreview,
+  },
   {
     name: "co med",
     description:
