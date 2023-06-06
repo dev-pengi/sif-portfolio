@@ -92,8 +92,9 @@ const skills: ISkills[] = [
   },
 ];
 
-import CoMedPreview from "../public/projects/co_med.png";
 import blobPreview from "../public/projects/blob.png";
+import clipPreview from "../public/projects/clip-path.png";
+import CoMedPreview from "../public/projects/co_med.png";
 import ChattiPreviw from "../public/projects/chatti.png";
 import coreUtilsPreviw from "../public/projects/core-utils-docs.png";
 import rhynoPreviw from "../public/projects/rhyno.png";
@@ -108,6 +109,14 @@ const projects: IProjects[] = [
     link: "https://blob.sifedine.com",
     github: "https://github.com/dev-pengi/svgblob",
     preview: blobPreview,
+  },
+  {
+    name: "clip-path editor",
+    description:
+      "css clip-path web editor, you can make, edit, and customize complex css clip-path shapes very easily",
+    link: "https://clip.sifedine.com",
+    github: "https://github.com/dev-pengi/clip-path",
+    preview: clipPreview,
   },
   {
     name: "co med",
