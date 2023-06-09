@@ -27,7 +27,7 @@ const Header: FC = () => {
 
   return (
     <>
-      <div className="bg-dark-3 h-14  w-full z-9"></div>
+      <div className="bg-dark-3 h-14  w-full z-9" />
       <header
         className={`bg-dark-2-blur top-0 h-14 w-full flex items-center justify-between fixed z-10 backdrop-blur-[25px] ${contentPadding}`}
       >
