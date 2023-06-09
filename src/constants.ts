@@ -137,7 +137,7 @@ const projects: IProjects[] = [
     name: "ai talk",
     description:
       "ai talk is a chatbot based on artificial intelligence, it uses the open ai api (gpt 3.5) to get the answers, this website is built with nextjs and typescript so it's a good example of how to use nextjs, states, data fetching and typescript",
-    link: "https://aitalk.sifedine.lol",
+    link: "https://aitalk.sifedine.com",
     github: "https://github.com/dev-pengi/aitalk",
     preview: aitalkPreviw,
   },
