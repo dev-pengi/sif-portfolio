@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Sifedine | pengi dev",
   description:
     "an algerian self taught full stack developer, check my portfolio for more info",
+  openGraph: {
+    title: "sifedine | pengi dev",
+  },
   keywords: [
     "developer",
     "coder",
