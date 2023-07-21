@@ -223,7 +223,7 @@ const services: IService[] = [
       "tools and automation",
       "server managment",
       "telegram bots",
-      "discord bots",
+      "mobile applications (react-native)",
     ],
   },
 ];
