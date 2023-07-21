@@ -23,7 +23,7 @@ const About: FC = () => {
     <section className="bg-dark-2 mt-[150px] py-6" id="about">
       <h3 className="capitalize font-black text-center text-3xl">about me</h3>
       <div
-        className={`${contentPadding} max-w-[1600px] mx-auto flex lg:flex-row flex-col items-center justify-between mt-[10px]`}
+        className={`${contentPadding} max-w-[1600px] mx-auto flex lg:flex-row flex-col items-center justify-between gap-[40px] mt-[10px]`}
       >
         <div className="relative w-full max-w-[400px]">
           <Image src={blob} alt="blob shape svg" className="w-full" />
