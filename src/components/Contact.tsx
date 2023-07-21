@@ -56,9 +56,7 @@ const Contact: FC = () => {
             <h2 className="text-4xl font-black lg:mx-0 mx-auto w-max">
               Contact
             </h2>
-            <p className="max-w-[500px] mt-[16px] lg:text-start text-center mx-auto">
-              you can use this form to send a message about anything, like a
-              project idea, more details about my services ...etc
+            <p className="max-w-[500px] mt-[16px] lg:text-start text-center mx-auto">Reach out using this form to discuss anything, from project ideas to detailed service inquiries. Let's connect and bring your vision to reality
             </p>
           </div>
           <div className="lg:w-[75%] lg:max-w-[700px] w-full flex flex-col gap-4">
