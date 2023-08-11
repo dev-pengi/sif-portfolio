@@ -92,6 +92,7 @@ const skills: ISkills[] = [
   },
 ];
 
+import sifCode from "../public/projects/sif-code.png";
 import blobPreview from "../public/projects/blob.png";
 import clipPreview from "../public/projects/clip-path.png";
 import CoMedPreview from "../public/projects/co_med.png";
@@ -102,6 +103,14 @@ import aitalkPreviw from "../public/projects/aitalk.png";
 import { StaticImageData } from "next/image";
 
 const projects: IProjects[] = [
+  {
+    name: "sif-code",
+    description:
+      "a web-based editor, that allows you to write html, css, and javascript in just one page and no server side is used, it's a good example of how to use react, nextjs, typescript, iframe sandbox, and monaco editor",
+    link: "https://code.sifedine.com",
+    // github: "https://github.com/dev-pengi/sif-code",
+    preview: sifCode,
+  },
   {
     name: "svg blob generator",
     description:
