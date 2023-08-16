@@ -12,6 +12,7 @@ import {
   faTwitter,
   faGithub,
   faInstagram,
+  faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Hero: FC = () => {
@@ -89,6 +90,13 @@ const Hero: FC = () => {
                 className={`${heroIcons}`}
               >
                 <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a
+                target="_blank"
+                href="https://t.me/sifjs"
+                className={`${heroIcons}`}
+              >
+                <FontAwesomeIcon icon={faTelegram} />
               </a>
             </div>
           </div>
