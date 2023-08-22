@@ -116,7 +116,7 @@ const projects: IProjects[] = [
     description:
       "a web-based editor, that allows you to write html, css, and javascript in just one page and no server side is used, it's a good example of how to use react, nextjs, typescript, iframe sandbox, and monaco editor",
     link: "https://code.sifedine.com",
-    // github: "https://github.com/dev-pengi/sif-code",
+    github: "https://github.com/dev-pengi/sif-code",
     preview: sifCode,
   },
   {
