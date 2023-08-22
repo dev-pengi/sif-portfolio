@@ -76,11 +76,11 @@ const skills: ISkills[] = [
   },
   {
     name: "React",
-    percentage: 46,
+    percentage: 67,
   },
   {
     name: "Next js",
-    percentage: 67,
+    percentage: 46,
   },
   {
     name: "React native",
