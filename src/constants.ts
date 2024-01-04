@@ -108,9 +108,17 @@ import ChattiPreviw from "../public/projects/chatti.png";
 import coreUtilsPreviw from "../public/projects/core-utils-docs.png";
 import rhynoPreviw from "../public/projects/rhyno.png";
 import aitalkPreviw from "../public/projects/aitalk.png";
+import sifPlayer from "../public/projects/sif-player.png";
 import { StaticImageData } from "next/image";
 
 const projects: IProjects[] = [
+  {
+    name: "sif-player",
+    description: "a powerful web based video player that allows you to play local videos or videos from a URL, with an advanced user friendly controllers made by me and support for shortcuts, PiP, Playback, loop, themes customization, and many many more, it all works on the client side, no server side is used, this project was made because i couldn't find a video player that meets my needs, so i made one myself!",
+    link: "https://player.sifedine.com",
+    github: "https://github.com/dev-pengi/sif-player",
+    preview: sifPlayer,
+  },
   {
     name: "sif-code",
     description:
