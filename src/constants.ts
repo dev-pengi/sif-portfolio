@@ -109,12 +109,20 @@ import coreUtilsPreviw from "../public/projects/core-utils-docs.png";
 import rhynoPreviw from "../public/projects/rhyno.png";
 import aitalkPreviw from "../public/projects/aitalk.png";
 import sifPlayer from "../public/projects/sif-player.png";
+import tMotionDev from "../public/projects/t-motion.png";
 import { StaticImageData } from "next/image";
 
 const projects: IProjects[] = [
   {
+    name: "T Motion Dev Landing page",
+    description: "the landing page for a software development team i created, the idea of the team was to provide software development services, the website is built with next.js, typescript, framer motion, and tailwindcss, the UI was designed be me using figma",
+    link: "https://tmotion.sifedine.com",
+    github: "https://github.com/dev-pengi/t-motion-dev",
+    preview: tMotionDev,
+  },
+  {
     name: "sif player",
-    description: "a powerful web based video player that allows you to play local videos or videos from a URL, with an advanced user friendly controllers made by me and support for shortcuts, PiP, Playback, loop, themes customization, and many many more, it all works on the client side, no server side is used, this project was made because i couldn't find a video player that meets my needs, so i made one myself!",
+    description: "a powerful web based video player that allows you to play local videos or videos from a URL, with advanced user friendly controllers made by me and support for shortcuts, PiP, Playback, loop, themes customization, and many many more, it all works on the client side, no server side is used, this project was made because i couldn't find a video player that meets my needs, so i made one myself!",
     link: "https://player.sifedine.com",
     github: "https://github.com/dev-pengi/sif-player",
     preview: sifPlayer,
