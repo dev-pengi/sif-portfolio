@@ -1,7 +1,7 @@
 "use client";
 import { FC } from "react";
 import Image from "next/image";
-import blob from "../../public/blob.svg";
+import mypicture from "../../public/mypicture.jpg";
 import dev from "../../public/dev.png";
 import { contentPadding } from "@/styles";
 import { aboutDescription, quotes } from "@/constants";
@@ -26,12 +26,7 @@ const About: FC = () => {
         className={`${contentPadding} max-w-[1600px] mx-auto flex lg:flex-row flex-col items-center justify-between gap-[45px] mt-[10px]`}
       >
         <div className="relative w-full max-w-[400px]">
-          <Image src={blob} alt="blob shape svg" className="w-full" />
-          <Image
-            src={dev}
-            alt="dev vector icon"
-            className="w-[150px] absolute top-0 bottom-0 right-0 left-0 m-auto block"
-          />
+          <Image src={mypicture} alt="sifedine dev real photo" className="w-full rounded-full" />
         </div>
         <p className="text-lg font-medium break-words whitespace-pre-wrap lg:text-start text-center">
           {aboutDescription}
