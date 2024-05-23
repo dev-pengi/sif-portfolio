@@ -109,6 +109,8 @@ const Projects: FC = () => {
                   src={project.preview}
                   alt="Co Med"
                   className="w-full rounded-xl"
+                  width={800}
+                  height={300}
                 />
               </Tilt>
             </div>

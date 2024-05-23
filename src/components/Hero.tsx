@@ -2,7 +2,7 @@
 import "animate.css";
 
 import { hero } from "@/constants";
-import { buttonStyle, contentPadding, gardient, heroIcons } from "@/styles";
+import { buttonStyle, contentPadding, heroIcons } from "@/styles";
 import { FC, useEffect, useRef } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import Typewriter from "typewriter-effect/dist/core";
@@ -13,6 +13,7 @@ import {
   faGithub,
   faInstagram,
   faTelegram,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Hero: FC = () => {
@@ -63,8 +64,8 @@ const Hero: FC = () => {
             <p
               ref={subContentRef}
               className="lg:text-start text-center sm:text-[20px] vsm:text-[18px] text-[15px] font-normal capitalize"
+              dangerouslySetInnerHTML={{ __html: hero.subContent }}
             >
-              {hero.subContent}
             </p>
           </div>
           <div className="mt-5 flex vsm:flex-row flex-col vsm:gap-8 gap-4 items-center lg:justify-start justify-center  animate__fadeIn">
@@ -79,10 +80,10 @@ const Hero: FC = () => {
               </a>
               <a
                 target="_blank"
-                href="https://twitter.com/sif_js"
+                href="https://www.linkedin.com/in/sifedine-haboul/"
                 className={`${heroIcons}`}
               >
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a
                 target="_blank"

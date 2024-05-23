@@ -13,10 +13,10 @@ const About: FC = () => {
     max: 10,
     perspective: 1000,
     scale: 1,
-    speed: 1000, 
+    speed: 1000,
     transition: true,
-    axis: 'Y',
-    reset: true, 
+    axis: "Y",
+    reset: true,
     easing: "cubic-bezier(.03,.98,.52,.99)",
   };
   return (
@@ -26,11 +26,16 @@ const About: FC = () => {
         className={`${contentPadding} max-w-[1600px] mx-auto flex lg:flex-row flex-col items-center justify-between gap-[45px] mt-[10px]`}
       >
         <div className="relative w-full max-w-[400px]">
-          <Image src={mypicture} alt="sifedine dev real photo" className="w-full rounded-full" />
+          <Image
+            src={mypicture}
+            alt="sifedine dev real photo"
+            className="w-full rounded-full"
+          />
         </div>
-        <p className="text-lg font-medium break-words whitespace-pre-wrap lg:text-start text-center">
-          {aboutDescription}
-        </p>
+        <p
+          className="text-lg font-medium break-words whitespace-pre-wrap lg:text-start text-center"
+          dangerouslySetInnerHTML={{ __html: aboutDescription }}
+        ></p>
       </div>
 
       <h3 className="capitalize font-black text-center text-3xl lg:mt-[20px] mt-[60px]">

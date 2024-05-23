@@ -17,7 +17,7 @@ interface IProjects {
   description: string;
   link: string;
   github?: string;
-  preview: StaticImageData;
+  preview: string;
 }
 interface ISideProjects {
   name: string;
@@ -35,7 +35,7 @@ const name: string = "Sifedine";
 
 const hero: Ihero = {
   content: 'Hey there, <span class="text-primary">I\'m sifedine</span>',
-  subContent: "and i am a full-stack developer",
+  subContent: 'A Software Developer at <a href="https://qareeb.io" target="_blank" class="text-primary">Qareeb</a>',
   illustration: "https://assets2.lottiefiles.com/packages/lf20_mK7qUzkwYA.json",
 };
 
@@ -100,17 +100,15 @@ const skills: ISkills[] = [
   },
 ];
 
-import sifCode from "../public/projects/sif-code.png";
-import blobPreview from "../public/projects/blob.png";
-import clipPreview from "../public/projects/clip-path.png";
-import CoMedPreview from "../public/projects/co_med.png";
-import ChattiPreviw from "../public/projects/chatti.png";
-import coreUtilsPreviw from "../public/projects/core-utils-docs.png";
-import rhynoPreviw from "../public/projects/rhyno.png";
-import aitalkPreviw from "../public/projects/aitalk.png";
-import sifPlayer from "../public/projects/sif-player.png";
-import tMotionDev from "../public/projects/t-motion.png";
-import { StaticImageData } from "next/image";
+
+
+
+
+
+
+
+
+
 
 const projects: IProjects[] = [
   {
@@ -118,14 +116,14 @@ const projects: IProjects[] = [
     description: "the landing page for a software development team i created, the idea of the team was to provide software development services, the website is built with next.js, typescript, framer motion, and tailwindcss, the UI was designed be me using figma",
     link: "https://tmotion.sifedine.com",
     github: "https://github.com/dev-pengi/t-motion-dev",
-    preview: tMotionDev,
+    preview: "/t-motion.png",
   },
   {
     name: "sif player",
     description: "a powerful web based video player that allows you to play local videos or videos from a URL, with advanced user friendly controllers made by me and support for shortcuts, PiP, Playback, loop, themes customization, and many many more, it all works on the client side, no server side is used, this project was made because i couldn't find a video player that meets my needs, so i made one myself!",
     link: "https://player.sifedine.com",
     github: "https://github.com/dev-pengi/sif-player",
-    preview: sifPlayer,
+    preview: "/sif-player.png",
   },
   {
     name: "sif code",
@@ -133,7 +131,7 @@ const projects: IProjects[] = [
       "a web-based editor, that allows you to write html, css, and javascript in just one page and no server side is used, it's a good example of how to use react, nextjs, typescript, iframe sandbox, and monaco editor",
     link: "https://code.sifedine.com",
     github: "https://github.com/dev-pengi/sif-code",
-    preview: sifCode,
+    preview: '/sif-code.png',
   },
   {
     name: "svg blob generator",
@@ -141,7 +139,7 @@ const projects: IProjects[] = [
       "a quick useful svg blob shapes generator, cutomize the shape, the color and the size and download it as svg or png",
     link: "https://blob.sifedine.com",
     github: "https://github.com/dev-pengi/svgblob",
-    preview: blobPreview,
+    preview: "/blob.png",
   },
   {
     name: "clip-path editor",
@@ -149,14 +147,14 @@ const projects: IProjects[] = [
       "css clip-path web editor, you can make, edit, and customize complex css clip-path shapes very easily",
     link: "https://clip.sifedine.com",
     github: "https://github.com/dev-pengi/clip-path",
-    preview: clipPreview,
+    preview: "/clip-path.png",
   },
   {
     name: "co med",
     description:
       "Co Med is a platform for both doctors and patients, it allows and helps doctor to manage and view their patients info, including charts, stats, public online reservation profile, This project was my entry for a hackathon that was hosted by ose it",
     link: "https://co-med.org",
-    preview: CoMedPreview,
+    preview: "/co_med.png",
   },
   {
     name: "chatti",
@@ -164,7 +162,7 @@ const projects: IProjects[] = [
       "Chatti is an open sourced chat web application that was built by react, nodejs, express, mongoDB and socket.io",
     link: "https://chatti.lol",
     github: "https://github.com/dev-pengi/chatti",
-    preview: ChattiPreviw,
+    preview: "/chatti.png",
   },
   {
     name: "ai talk",
@@ -172,7 +170,7 @@ const projects: IProjects[] = [
       "ai talk is a chatbot based on artificial intelligence, it uses the open ai api (gpt 3.5) to get the answers, this website is built with nextjs and typescript so it's a good example of how to use nextjs, states, data fetching and typescript",
     link: "https://aitalk.sifedine.com",
     github: "https://github.com/dev-pengi/aitalk",
-    preview: aitalkPreviw,
+    preview: "/aitalk.png",
   },
   {
     name: "utils core",
@@ -180,14 +178,14 @@ const projects: IProjects[] = [
       "utils-core.js is a powerful JavaScript utility library that provides a wide range of functions to simplify common programming tasks",
     link: "https://utils-core.js.org",
     github: "https://github.com/dev-pengi/utils-core.js",
-    preview: coreUtilsPreviw,
+    preview: "/core-utils-docs.png",
   },
   {
     name: "Rhyno bot dashboard",
     description:
       "Rhyno bot is a verified multipurpose discord bot, i developed the dashboard that is responsible for claiming the rewards, customize the commands in the servers, customize the bot settings and replies",
     link: "https://rhynobot.com",
-    preview: rhynoPreviw,
+    preview: "/rhyno.png",
   },
 ];
 
@@ -262,7 +260,9 @@ const services: IService[] = [
 ];
 
 const aboutDescription: string =
-  "i'm a young developer from algeria, i use javascript and typescript i code both client side (react, nextjs) and backend (nodejs express and mongodb) and even server hosting and management. i've shown a good level of dedication and perseverance in pursuing my passion for software development. with a natural ability to solve problems and an eagerness to learn, i'm committed to keeping up to date with the latest technology. my diverse skills in web development, server management, and publishing make me an invaluable asset to any team.";
+  `I am a passionate software developer from Algeria, currently working at <a href="https://qareeb.io" target="_blank" class="text-primary">Qareeb</a>. My expertise lies in JavaScript and TypeScript, with a strong focus on both client-side(React, Next.js) and backend (Node.js, Express, MongoDB) development. Additionally, I have experience in server hosting and management.
+
+Known for my dedication and enthusiasm, I continuously strive to stay updated with the latest technologies and trends.My natural problem - solving ability and diverse skill set in web development, server management, and publishing make me a valuable asset to any team.`;
 
 const quotes: string[] = [
   "never regret the past, if the action was good it's a memory, if it wasn't then it's a lesson",

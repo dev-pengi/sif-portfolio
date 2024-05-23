@@ -86,7 +86,7 @@ const Contact: FC = () => {
                 setMessage(e.target.value);
               }}
               placeholder="Message.."
-              className="min-h-[350px]  w-full px-4 py-3 rounded-[5px] resize-y bg-dark-2"
+              className="min-h-[350px] max-h-[600px]  w-full px-4 py-3 rounded-[5px] resize-y bg-dark-2"
             ></textarea>
             <button
               className={`${buttonStyle} ${
