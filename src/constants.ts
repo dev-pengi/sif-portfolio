@@ -35,7 +35,7 @@ const name: string = "Sifedine";
 
 const hero: Ihero = {
   content: 'Hey there, <span class="text-primary">I\'m sifedine</span>',
-  subContent: 'A Software Developer at <a href="https://qareeb.io" target="_blank" class="text-primary">Qareeb</a>',
+  subContent: 'A Software Engineer',
   illustration: "https://assets2.lottiefiles.com/packages/lf20_mK7qUzkwYA.json",
 };
 
@@ -260,7 +260,7 @@ const services: IService[] = [
 ];
 
 const aboutDescription: string =
-  `I am a passionate software developer from Algeria, currently working at <a href="https://qareeb.io" target="_blank" class="text-primary">Qareeb</a>. My expertise lies in JavaScript and TypeScript, with a strong focus on both client-side(React, Next.js) and backend (Node.js, Express, MongoDB) development. Additionally, I have experience in server hosting and management.
+  `I am a passionate software engineer from Algeria. My expertise lies in JavaScript and TypeScript, with a strong focus on both client-side(React, Next.js) and backend (Node.js, Express, MongoDB) development. Additionally, I have experience in server hosting and management.
 
 Known for my dedication and enthusiasm, I continuously strive to stay updated with the latest technologies and trends.My natural problem - solving ability and diverse skill set in web development, server management, and publishing make me a valuable asset to any team.`;
 
